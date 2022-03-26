@@ -1,0 +1,150 @@
+
+App{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+main{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #007e9a;
+   padding-top: 75px;
+    background: #ccd7dd;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+footer{
+    width:100%;
+    min-height:10vh;
+    background-color: antiquewhite;
+    background-color: #ccd7dd ;
+    justify-content: center;
+    position: relative;
+    display: flex;
+  
+   
+    
+}
+
+#footer__main::before{
+    content:'';
+    width:60vw;
+    z-index: 99;
+    background-color: #f5e235;
+    height: 10px;
+    position: absolute;
+    border-radius: 20px;
+   display: block;
+ margin-top: -10px;
+
+   
+}
+
+#footer__content{
+    width:70%;
+    max-height:100%;
+    background-color: rgb(241, 199, 182);
+    background-color: #003954 ;
+    padding: 2rem;
+    
+    color:white;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 10px 10px rgb(0, 0, 0);
+
+}
+
+.flex__row__center
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.flex__column__center
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#footer__title{
+    display: block;
+    width: 100%;
+    text-align: center;
+   
+    font-size: larger;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.button{
+    
+    background-color: #007e9a;
+    border: 1px solid #007e9a;
+    border-radius: 30px;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto 20px;
+    width: fit-content;
+    padding: 0 20px;
+    text-align: center;
+    width: 25%;
+    box-sizing: inherit;
+    cursor: pointer;
+    /* background-color: transparent; */
+    transition:all 0.2s ease-in-out;
+
+}
+.button:hover{
+transform: translateY(-3px);
+box-shadow: 0 7px 12px rgb(248, 245, 245);
+
+}
+
+
+
+
+@media (max-width:900px)
+{
+    footer{
+            max-height:15vh;
+            
+            font-size: 18px;
+            flex-direction: row;
+            padding:0.5rem;
+          }
+          #footer__content{
+              width:95%;
+              justify-content: space-between;
+          }
+          #footer__title{
+              width:100%;
+              text-align: center;
+              
+              margin-bottom:0;
+              
+          }
+          .button{
+              width:35%;
+              margin:0;
+              font-size: 16px;
+              
+          }
+
+
+}
