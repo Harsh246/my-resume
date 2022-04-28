@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import resumepdf from '../media/resumepdf.pdf';
 
 import '../styles/navbar.css';
 
@@ -14,7 +15,7 @@ export default function Navbar() {
           <NavLink to="/" activeClassName="active">Home </NavLink>
           <NavLink to="/about" activeClassName="active">About</NavLink>
           <NavLink to="/projects" activeClassName="active">Projects</NavLink>
-          <a href="https://www.linkedin.com/in/erharshmalhotra/" target="_blank" rel="noreferrer" id="button" activeClassName="active">Contact</a>
+          <a href={resumepdf} download="Harsh's Resume" rel="noreferrer" id="button" activeClassName="active">Download Resume</a>
           </nav>
  
     </header>

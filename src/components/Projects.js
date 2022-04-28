@@ -4,7 +4,7 @@ import '../styles/projects.css';
 import picCharades from '../media/pic-charades.gif';
 import task from '../media/task.gif';
 import poke from '../media/poke.gif';
-
+import resume from '../media/resume.gif';
 
 export default function Projects() {
 
@@ -24,6 +24,11 @@ export default function Projects() {
       title: 'Pic-Charades',
       image: picCharades,
       url:'https://github.com/Harsh246/pic-charades'
+    },
+    {
+      title: 'Resume Builder',
+      image: resume,
+      url:'https://github.com/Harsh246/resume-builder'
     }
 
      
